@@ -13,7 +13,7 @@
       <!-- This is the nav bar -->
 <div class="w3-top">
     <div class="w3-bar w3-black w3-card">
-      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <!-- <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> -->
       <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
       <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About me</a>
       <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Projects</a>
@@ -50,19 +50,33 @@
     <div class="w3-row w3-padding-32">
         <div class="w3-third">
             <p>Team work and Adaptability.</p>
-            <div class="popup" onclick="myFunction()">
+            <div id="myPopup0" class="popup">
                 <i class="fas fa-hands-helping" style="font-size:80px" >
-                    <span class="popuptext" id="myPopup">A Simple Popup!</span>
+                    <span class="popuptext" id="popuptext0">
+                        I am driven person with a can-do attitude which allows me to perform tasks over several hours while remaining my focused.
+                        I consider myself as a positive person that always try to look at the bright side even in I am in the middle of a "storm"
+                    </span>
                 </i>
             </div>
         </div>
         <div class="w3-third">
             <p>Managing and Work under pressure</p>
-            <i class="fas fa-tasks" style="font-size:80px" ></i>
+            <div id="myPopup1" class="popup">
+                    <i class="fas fa-tasks" style="font-size:80px" ></i>
+                        <span class="popuptext" id="popuptext1">
+                                I am driven person with a can-do attitude which allows me to perform tasks over several hours while remaining my focused.
+                                I consider myself as a positive person that always try to look at the bright side even in I am in the middle of a "storm"        
+                        </span>
+                    </i>
+             </div>
         </div>
         <div class="w3-third">
             <p>Resilient with a Can-do attitude</p>
-            <i class="fas fa-briefcase" style="font-size:80px" ></i>
+            <div id="myPopup2" class="popup">
+                    <i class="fas fa-briefcase" style="font-size:80px" ></i>
+                        <span class="popuptext" id="popuptext2">A Simple Popup3!</span>
+                    </i>
+            </div>
         </div>
     </div>
 </div>
@@ -97,4 +111,5 @@
         <i href="https://github.com/jaitone" class="fab fa-github w3-hover-opacity"></i>
         <i href="https://www.linkedin.com/in/mario-garcia-4491b316b/" class="fa fa-linkedin w3-hover-opacity"></i>
     </footer>
+    <script src="./button.js"></script>
 </body>

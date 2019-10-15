@@ -35,10 +35,10 @@ body {
   /* The actual popup */
   .popup .popuptext {
     visibility: hidden;
-    width: 160px;
+    width: 1000px;
     background-color: #555;
     color: #fff;
-    text-align: center;
+    text-align: left;
     border-radius: 6px;
     padding: 8px 0;
     position: absolute;
@@ -52,7 +52,7 @@ body {
   .popup .popuptext::after {
     content: "";
     position: absolute;
-    top: 100%;
+    top: 10%;
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
