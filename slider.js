@@ -1,3 +1,7 @@
+
+
+
+
 var swiper = new Swiper('.swiper-container', {
     effect: 'coverflow',
     grabCursor: true,
@@ -6,7 +10,7 @@ var swiper = new Swiper('.swiper-container', {
     coverflowEffect: {
       rotate: 30,
       stretch: 0,
-      depth: 500,
+      depth: 300,
       modifier: 1,
       slideShadows : true,
     },
