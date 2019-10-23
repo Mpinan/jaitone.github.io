@@ -14,11 +14,12 @@ let mail = document.getElementById(mail)
 
 let paragraph = document.getElementById(text) 
     // send mail with defined transport object
-    let info = await transporter.sendMail({
+    
+let mailOptions = {
         from: mail,
         to: user,
         text: paragraph
-    });
+    };
 
 transporter.sendMail(mailOptions, function(error, info){
     if(error){
