@@ -1,7 +1,7 @@
 import React from "react";
 import { Jumbotron, Button } from "reactstrap";
 
-const Example = props => {
+const Layer = props => {
   return (
     <div>
       <Jumbotron>
@@ -23,4 +23,4 @@ const Example = props => {
   );
 };
 
-export default Example;
+export default Layer;
