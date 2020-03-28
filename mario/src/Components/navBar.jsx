@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Layer from "./topLayer";
+import Carousel from "./carousel";
 import {
   Collapse,
   Navbar,
@@ -36,6 +37,7 @@ const NavBar = props => {
         </Collapse>
       </Navbar>
       <Layer />
+      <Carousel />
     </div>
   );
 };
