@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Layer from "./topLayer";
+import Header from "./header";
 import Carousel from "./carousel";
 import {
   Collapse,
@@ -18,7 +18,11 @@ const NavBar = props => {
 
   return (
     <div>
-      <Navbar color="faded" light>
+      <Navbar
+        className="navbar fixed-top navbar-light bg-light"
+        color="faded"
+        light
+      >
         <NavbarBrand href="/" className="mr-auto">
           reactstrap
         </NavbarBrand>
@@ -36,7 +40,7 @@ const NavBar = props => {
           </Nav>
         </Collapse>
       </Navbar>
-      <Layer />
+      <Header />
       <Carousel />
     </div>
   );
