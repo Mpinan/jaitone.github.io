@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "./header";
 import Carousel from "./carousel";
+import PopUpModal from "./modals";
 import {
   Collapse,
   Navbar,
@@ -41,7 +42,8 @@ const NavBar = props => {
         </Collapse>
       </Navbar>
       <Header />
-      <Carousel />
+      <PopUpModal />
+      {/* <Carousel /> */}
     </div>
   );
 };
