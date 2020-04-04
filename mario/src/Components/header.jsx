@@ -8,7 +8,8 @@ const Header = props => {
       <Jumbotron
         style={{
           backgroundImage: `url(${bgimage})`,
-          backgroundSize: "cover"
+          backgroundSize: "cover",
+          height: "100vh"
         }}
       >
         <h1 className="display-3 text-white" style={{ marginBottom: 100 }}>

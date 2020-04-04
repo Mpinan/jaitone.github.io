@@ -2,19 +2,24 @@ import React, { useState } from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
 const PopUpModal = props => {
-  //   const { buttonLabel, className } = props;
+  // const { buttonLabel, className } = props;
+  const buttonLabel1 = "hello";
+  const buttonLabel2 = "hello";
+  // const className = "Adios";
 
   const [modal, setModal] = useState(false);
+  const [modal2, setModal2] = useState(false);
 
   const toggle = () => setModal(!modal);
+  const toggle2 = () => setModal2(!modal2);
 
   return (
     <div>
-      <Button color="danger" onClick={toggle}>
-        {"Resilient"}
+      <Button color="danger" onClick={toggle} style={{ margin: "10px" }}>
+        {buttonLabel1}
       </Button>
       <Modal isOpen={modal} toggle={toggle}>
-        <ModalHeader toggle={toggle}>Modal title</ModalHeader>
+        <ModalHeader toggle={toggle}>Resilience</ModalHeader>
         <ModalBody>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -33,19 +38,21 @@ const PopUpModal = props => {
           </Button>
         </ModalFooter>
       </Modal>
-      <Button color="danger" onClick={toggle}>
-        {"Worker"}
+
+      <Button color="danger" onClick={toggle2} style={{ margin: "10px" }}>
+        {buttonLabel2}
       </Button>
-      <Modal isOpen={modal} toggle={toggle}>
-        <ModalHeader toggle={toggle}>Modal title</ModalHeader>
+      <Modal isOpen={modal2} toggle={toggle2}>
+        <ModalHeader toggle={toggle2}>Resilience</ModalHeader>
         <ModalBody>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do .
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={toggle}>
+          <Button color="primary" onClick={toggle2}>
             Do Something
           </Button>{" "}
-          <Button color="secondary" onClick={toggle}>
+          <Button color="secondary" onClick={toggle2}>
             Cancel
           </Button>
         </ModalFooter>
