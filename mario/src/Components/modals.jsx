@@ -11,8 +11,13 @@ const PopUpModal = props => {
   const toggle3 = () => setModal3(!modal3);
 
   return (
-    <div>
-      <Button color="danger" onClick={toggle} style={{ margin: "10px" }}>
+    <div style={{ textAlign: "center" }}>
+      <Button
+        color="info"
+        onClick={toggle}
+        style={{ margin: 50, padding: 25, border: 25 }}
+        className="rounded-0"
+      >
         Team work and Adaptability.
       </Button>
       <Modal isOpen={modal} toggle={toggle}>
@@ -25,7 +30,12 @@ const PopUpModal = props => {
         </ModalBody>
       </Modal>
 
-      <Button color="danger" onClick={toggle2} style={{ margin: "10px" }}>
+      <Button
+        color="info"
+        onClick={toggle2}
+        style={{ margin: 50, padding: 25, border: 25 }}
+        className="rounded-0"
+      >
         Managing and Work under pressure
       </Button>
       <Modal isOpen={modal2} toggle={toggle2}>
@@ -42,7 +52,12 @@ const PopUpModal = props => {
           apart from hundreds of people, takeaway orders were taken too.
         </ModalBody>
       </Modal>
-      <Button color="danger" onClick={toggle3} style={{ margin: "10px" }}>
+      <Button
+        color="info"
+        onClick={toggle3}
+        style={{ margin: 50, padding: 25, border: 25 }}
+        className="rounded-0"
+      >
         Resilient with a Can-do attitude
       </Button>
       <Modal isOpen={modal3} toggle={toggle3}>

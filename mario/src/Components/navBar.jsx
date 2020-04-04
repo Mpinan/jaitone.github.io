@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Header from "./header";
-import Carousel from "./carousel";
 import PopUpModal from "./modals";
 import {
   Collapse,
@@ -25,25 +24,22 @@ const NavBar = props => {
         light
       >
         <NavbarBrand href="/" className="mr-auto">
-          reactstrap
+          Home
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink href="/projects/">Projects</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                GitHub
-              </NavLink>
+              <NavLink href="/contact/">Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
       <Header />
       <PopUpModal />
-      {/* <Carousel /> */}
     </div>
   );
 };

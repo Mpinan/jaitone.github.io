@@ -9,19 +9,22 @@ const Header = props => {
         style={{
           backgroundImage: `url(${bgimage})`,
           backgroundSize: "cover",
-          height: "100vh"
+          height: "100%"
         }}
       >
-        <h1 className="display-3 text-white" style={{ margin: 100 }}>
+        <h1
+          className="display-3 text-white"
+          style={{ margin: 50, padding: 25, border: 25 }}
+        >
           Mario Garcia Pinan
         </h1>
-        <div style={{ margin: 100 }}>
+        <div style={{ margin: 50, padding: 25, border: 25 }}>
           <p className="lead text-white">Junior Full Stack Developer.</p>
           <hr className="my-2 " />
           {/* <p className="text-white">mgpinan1990@gmail.com</p> */}
           <p className="lead">
             <Button color="secondary" className="rounded-0">
-              Learn More
+              About me
             </Button>
           </p>
         </div>
