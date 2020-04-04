@@ -13,10 +13,9 @@ const PopUpModal = props => {
   return (
     <div style={{ textAlign: "center" }}>
       <Button
-        color="info"
         onClick={toggle}
         style={{ margin: 50, padding: 25, border: 25 }}
-        className="rounded-0"
+        className="rounded-0 bg-info"
       >
         Team work and Adaptability.
       </Button>

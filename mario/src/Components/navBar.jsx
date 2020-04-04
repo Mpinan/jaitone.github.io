@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Header from "./header";
-import PopUpModal from "./modals";
+// import Header from "./header";
 import {
   Collapse,
   Navbar,
@@ -11,18 +10,14 @@ import {
   NavLink
 } from "reactstrap";
 
-const NavBar = props => {
+const NavBar = () => {
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
     <div>
-      <Navbar
-        className="navbar fixed-top navbar-light bg-light"
-        color="faded"
-        light
-      >
+      <Navbar className="navbar fixed-top navbar-light bg-light" color="info">
         <NavbarBrand href="/" className="mr-auto">
           Home
         </NavbarBrand>
@@ -38,8 +33,7 @@ const NavBar = props => {
           </Nav>
         </Collapse>
       </Navbar>
-      <Header />
-      <PopUpModal />
+      {/* <Header /> */}
     </div>
   );
 };
