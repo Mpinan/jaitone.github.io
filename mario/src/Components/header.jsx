@@ -24,13 +24,13 @@ const Header = props => {
           <p className="lead text-white">Junior Full Stack Developer.</p>
           <hr className="my-2 " />
           <p className="lead">
-            <Button href="/about" color="secondary" className="rounded-0">
+            <Button href="/about" color="info" className="rounded-0">
               About me
             </Button>
           </p>
         </div>
+        <PopUpModal />
       </Jumbotron>
-      <PopUpModal />
     </div>
   );
 };

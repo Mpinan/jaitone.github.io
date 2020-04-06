@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import Header from "./header";
 import {
   Collapse,
   Navbar,
@@ -18,7 +17,7 @@ const NavBar = () => {
   return (
     <div>
       <Navbar
-        className="navbar fixed-top navbar-light "
+        className="navbar fixed-top navbar-dark "
         style={{ backgroundColor: "transparent" }}
       >
         <NavbarBrand href="/" className="mr-auto">
@@ -36,7 +35,6 @@ const NavBar = () => {
           </Nav>
         </Collapse>
       </Navbar>
-      {/* <Header /> */}
     </div>
   );
 };
