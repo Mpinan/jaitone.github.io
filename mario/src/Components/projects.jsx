@@ -1,73 +1,141 @@
 import React, { Component } from "react";
 import {
-  MDBCarousel,
-  MDBCarouselCaption,
-  MDBCarouselInner,
-  MDBCarouselItem,
-  MDBView,
-  MDBMask,
-  MDBContainer
-} from "mdbreact";
+  Container,
+  Row,
+  Col,
+  Card,
+  Button,
+  CardTitle,
+  CardText
+} from "reactstrap";
 
 class Projects extends Component {
-  state = {};
   render() {
     return (
-      <MDBContainer>
-        <MDBCarousel
-          activeItem={1}
-          length={3}
-          showControls={true}
-          showIndicators={true}
-          className="z-depth-1"
-        >
-          <MDBCarouselInner>
-            <MDBCarouselItem itemId="1" className="min-vh-100">
-              <MDBView>
-                <img
-                  style={{ imageS: "cover" }}
-                  className="d-block w-100"
-                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
-                  alt="First slide"
-                />
-                <MDBMask overlay="black-light" />
-              </MDBView>
-              <MDBCarouselCaption>
-                <h3 className="h3-responsive">Light mask</h3>
-                <p>First text</p>
-              </MDBCarouselCaption>
-            </MDBCarouselItem>
-            <MDBCarouselItem itemId="2">
-              <MDBView>
-                <img
-                  className="d-block w-100"
-                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
-                  alt="Second slide"
-                />
-                <MDBMask overlay="black-strong" />
-              </MDBView>
-              <MDBCarouselCaption>
-                <h3 className="h3-responsive">Strong mask</h3>
-                <p>Second text</p>
-              </MDBCarouselCaption>
-            </MDBCarouselItem>
-            <MDBCarouselItem itemId="3">
-              <MDBView>
-                <img
-                  className="d-block w-100"
-                  src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
-                  alt="Third slide"
-                />
-                <MDBMask overlay="black-slight" />
-              </MDBView>
-              <MDBCarouselCaption>
-                <h3 className="h3-responsive">Slight Mast</h3>
-                <p>Third text</p>
-              </MDBCarouselCaption>
-            </MDBCarouselItem>
-          </MDBCarouselInner>
-        </MDBCarousel>
-      </MDBContainer>
+      <Container style={{ textAlign: "center" }}>
+        <div style={{ marginTop: "40px", marginBottom: "40px" }}>
+          <Row>
+            <Col style={{ margin: "10px" }}>
+              <Card
+                body
+                inverse
+                style={{ backgroundColor: "#9098BC", borderColor: "#333" }}
+              >
+                <CardTitle>
+                  <h4>Acebook</h4>
+                </CardTitle>
+                <CardText>
+                  A humble copy of facebook with posts, albums...
+                  <br />
+                  <br />
+                  <b>Tech stack:</b> Ruby on rails, RSpec, Capybara, PostgreSQL,
+                  Active Record, Bootstrap, RuboCop, Simplecov
+                </CardText>
+                <Button>Link to Github</Button>
+              </Card>
+            </Col>
+          </Row>
+          <Row>
+            <Col style={{ margin: "10px" }}>
+              <Card
+                body
+                inverse
+                style={{ backgroundColor: "#9098BC", borderColor: "#333" }}
+              >
+                <CardTitle>
+                  <h4>The Cat Api</h4>
+                </CardTitle>
+                <CardText>
+                  A Web Page that renders information about Purrrfect cats from
+                  TheCatApi,
+                  <br />
+                  <br />
+                  <b>Tech stack:</b> React and Reactstrap
+                </CardText>
+                <Button>Link to Github</Button>
+              </Card>
+            </Col>
+            <Col style={{ margin: "10px" }}>
+              <Card
+                body
+                inverse
+                style={{ backgroundColor: "#9098BC", borderColor: "#333" }}
+              >
+                <CardTitle>
+                  <h4>Hoover</h4>
+                </CardTitle>
+                <CardText>
+                  Program that navigates an imaginary robotic hoover (much like
+                  a Roomba)
+                  <br />
+                  <br />
+                  <b>Tech stack:</b> Javascript and Jest
+                </CardText>
+                <Button>Link to Github</Button>
+              </Card>
+            </Col>
+            <Col style={{ margin: "10px" }}>
+              <Card
+                body
+                inverse
+                style={{ backgroundColor: "#9098BC", borderColor: "#333" }}
+              >
+                <CardTitle>
+                  <h4>The Chitter FE</h4>
+                </CardTitle>
+                <CardText>
+                  A very humble Front-end copy of twitter with a given back end
+                  in Ruby on rails
+                  <br />
+                  <br />
+                  <b>Tech stack:</b> React and reactstrap
+                </CardText>
+                <Button>Link to Github</Button>
+              </Card>
+            </Col>
+            <Col style={{ margin: "10px" }}>
+              <Card
+                body
+                inverse
+                style={{ backgroundColor: "#9098BC", borderColor: "#333" }}
+              >
+                <CardTitle>
+                  <h4>Thermostat</h4>
+                </CardTitle>
+                <CardText>
+                  A thermostat app where you can increase or descreas the
+                  temperature with a weather API.
+                  <br />
+                  <br />
+                  <b>Tech stack:</b> Javascript, Jasmine and jQuery
+                </CardText>
+                <Button>Link to Github</Button>
+              </Card>
+            </Col>
+          </Row>
+          <Row>
+            <Col sm="12" md={{ size: 6, offset: 3 }}>
+              <Card
+                body
+                inverse
+                style={{ backgroundColor: "#9098BC", borderColor: "#333" }}
+              >
+                <CardTitle>
+                  <h4>BorisBikes-TheGame</h4>
+                </CardTitle>
+                <CardText>
+                  A game in honor to the first project at makers where we build
+                  a game engine in JavaScript
+                  <br />
+                  <br />
+                  <b>Tech stack:</b> React and reactstrap
+                </CardText>
+                <Button>Link to Github</Button>
+              </Card>
+            </Col>
+          </Row>
+        </div>
+      </Container>
     );
   }
 }

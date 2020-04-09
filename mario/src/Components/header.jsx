@@ -1,7 +1,7 @@
 import React from "react";
-import { Jumbotron, Button } from "reactstrap";
+import { Jumbotron, Button, Container } from "reactstrap";
 import bgimage from "../Assets/header-computer-close3-1920x500.jpg";
-import PopUpModal from "./modals";
+import ButtonsHeader from "./buttons";
 // import About from "./about";
 
 const Header = props => {
@@ -9,9 +9,9 @@ const Header = props => {
     <div>
       <Jumbotron
         style={{
+          background: "transparent",
           backgroundImage: `url(${bgimage})`,
-          backgroundSize: "cover",
-          height: "100%"
+          backgroundSize: "cover"
         }}
       >
         <h1
@@ -23,14 +23,10 @@ const Header = props => {
         <div style={{ margin: 50, padding: 25, border: 25 }}>
           <p className="lead text-white">Junior Full Stack Developer.</p>
           <hr className="my-2 " />
-          <p className="lead">
-            <Button href="/about" color="info" className="rounded-0">
-              About me
-            </Button>
-          </p>
+          <p className="lead"></p>
         </div>
-        <PopUpModal />
       </Jumbotron>
+      <ButtonsHeader />
     </div>
   );
 };

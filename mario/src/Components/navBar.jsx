@@ -17,8 +17,12 @@ const NavBar = () => {
   return (
     <div>
       <Navbar
-        className="navbar fixed-top navbar-dark "
-        style={{ backgroundColor: "transparent" }}
+        className="navbar fixed-top navbar-dark"
+        style={{
+          backgroundColor: "transparent",
+          position: "center",
+          marginBottom: "0px"
+        }}
       >
         <NavbarBrand href="/" className="mr-auto">
           Home

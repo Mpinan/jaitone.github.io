@@ -8,6 +8,15 @@ body {
   /* background-color: #a9a9a9; */
   background: url("Assets//107669.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-device-width: 400px) {
+  body {
+    background: url("Assets//107669.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 code {
