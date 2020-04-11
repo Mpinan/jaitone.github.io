@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Projects from "./projects";
-import About from "./about";
 import Hero from "./heroBG";
 
 import {
