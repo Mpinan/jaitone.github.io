@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Projects from "./projects";
 import About from "./about";
-import Hero from "./buttons";
+import Hero from "./heroBG";
 
 import {
   MDBContainer,
@@ -13,7 +13,6 @@ import {
   MDBIcon,
   MDBBtn,
 } from "mdbreact";
-// import About from "./about";
 
 class Header extends Component {
   state = {
