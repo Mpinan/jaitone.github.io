@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Projects from "./projects";
 import Hero from "./heroBG";
+import Recommendations from "./recommendations";
 
 import {
   MDBContainer,
@@ -76,6 +77,18 @@ class Header extends Component {
                 onClick={this.toggleJustified("4")}
                 role="tab"
               >
+                Recommendations
+              </MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink
+                className="text-nav"
+                link
+                to="#contact"
+                active={this.state.activeItemJustified === "4"}
+                onClick={this.toggleJustified("4")}
+                role="tab"
+              >
                 Contact
               </MDBNavLink>
             </MDBNavItem>
@@ -95,6 +108,9 @@ class Header extends Component {
             <p className="mt-2">Waiting for component</p>
           </MDBTabPane>
           <MDBTabPane tabId="4">
+            <Recommendations />
+          </MDBTabPane>
+          <MDBTabPane tabId="5">
             <p className="mt-2">Waiting for component</p>
           </MDBTabPane>
         </MDBTabContent>
