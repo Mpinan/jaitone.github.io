@@ -66,26 +66,33 @@ code {
   color: white;
 }
 
-.img {
+.position {
   display: inline-block;
+  /* float: left; */
+}
+
+.img {
   position: relative;
   width: 50%;
 }
 
 .image {
-  width: 200px;
-  height: 200px;
+  width: 200%;
+  height: auto;
+}
+
+.row {
+  display: table-cell !important;
 }
 
 .overlay {
-  margin: 20px;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: grey;
   overflow: hidden;
-  width: auto;
+  width: 200%;
   height: 100%;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
@@ -119,7 +126,7 @@ code {
 }
 
 @media screen and (max-width: 500px) {
-  .img {
-    width: 100%;
+  .row {
+    display: list-item !important;
   }
 }
